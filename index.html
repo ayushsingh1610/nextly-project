@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nextly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            body: ["Georgia"],
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-neutral-800 text-neutral-300 font-snas">
+    <nav>
+      <div class="flex flex-col sm:flex-row justify-between mx-8 my-8">
+        <h3 class="text-2xl font-bold">Ayush Singh</h3>
+        <ul class="flex flex-col sm:flex-row">
+          <li class="mx-4 my-2">About</li>
+          <li class="mx-4 my-2">Projects</li>
+          <li class="mx-4 my-2">Contact</li>
+        </ul>
+        <div class="flex justify-between">
+          <button
+            type="submit"
+            class="bg-indigo-600 hover:bg-indigo-500 rounded-xl px-4"
+          >
+            Get Started
+          </button>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="size-6 my-3 ml-4"
+            >
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="flex flex-col md:flex-row justify-evenly items-center p-8">
+        <div>
+          <h3 class="text-5xl font-bold my-4">
+            Free Landing Page Template for startups
+          </h3>
+          <h6 class="w-3/4 text-lg">
+            Nextly is a free landing page & marketing website template for
+            startups and indie projects. Its built with Next.js & TailwindCSS.
+            And its completely open-source.
+          </h6>
+          <div class="flex flex flex-col sm:flex-row items-center mx-4 my-8">
+            <button
+              type="button"
+              class="bg-indigo-600 hover:bg-indigo-500 rounded-xl px-4 py-2"
+            >
+              Download For free
+            </button>
+            <div class="flex flex-col sm:flex-row items-center px-4 py-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="40"
+                height="40"
+                viewBox="0 0 64 64"
+              >
+                <path
+                  d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z"
+                ></path>
+              </svg>
+              <a href="#" class="ml-2">View on Github</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center md:flex-row md:w-3/4 md:h-3/4 ml-8"
+        >
+          <img
+            src="https://nextly.web3templates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero.4e76c802.png&w=640&q=75"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="border-sky-700">
+      <div class="w-full text-center my-8">
+        Trusted by <span class="text-blue-600">2000+</span> customers worldwide
+      </div>
+      <div class="my-8">
+        <ul class="flex flex-col justify-evenly items-center sm:flex-row">
+          <li>
+            <img
+              src="https://logos-world.net/wp-content/uploads/2020/08/Amazon-Logo-2012-500x281.png"
+              alt=""
+              width="100"
+            />
+          </li>
+          <li>
+            <img
+              src="https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo-700x394.png"
+              alt=""
+              width="100"
+            />
+          </li>
+          <li>
+            <img
+              src="https://logos-world.net/wp-content/uploads/2020/04/Netflix-Logo-700x394.png"
+              alt=""
+              width="100"
+            />
+          </li>
+          <li>
+            <img
+              src="https://logos-world.net/wp-content/uploads/2020/04/Sony-Logo-700x394.png"
+              alt=""
+              width="100"
+            />
+          </li>
+          <li>
+            <img
+              src="https://logos-world.net/wp-content/uploads/2020/04/Samsung-Logo-700x394.png"
+              alt=""
+              width="100"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="border-slate-100 sm:px-48 md:px-52 lg:px-80">
+      <div
+        class="flex flex-col justify-evenly items-center max-h-auto h-auto mx-8 my-8 px-4 py-8 text-center"
+      >
+        <p class="text-blue-600 font-medium py-1">NEXTLY benefits</p>
+        <p class="text-3xl font-bold py-2">
+          Why should you use this landing page
+        </p>
+        <p class="py-2">
+          Nextly is a free landing page & marketing website template for
+          startups and indie projects. Its built with Next.js & TailwindCSS. And
+          its completely open-source.
+        </p>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="grid md:grid-cols-2 divide-x-0 mx-8 my-8">
+        <div>
+          <img
+            src="https://nextly.web3templates.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbenefit-one.a3b4f792.png&w=640&q=75"
+            alt=""
+          />
+        </div>
+        <div>
+          <div>
+            <p class="text-4xl font-bold my-8">Highlight your benefits</p>
+            <p class="text-lg font-medium my-8">
+              You can use this space to highlight your first benefit or a
+              feature of your product. It can also contain an image or
+              Illustration like in the example along with some bullet points.
+            </p>
+
+            <div class="flex items-center my-6">
+              <div class="mx-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-12 bg-indigo-500 px-2 rounded-xl"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-2.625 6c-.54 0-.828.419-.936.634a1.96 1.96 0 0 0-.189.866c0 .298.059.605.189.866.108.215.395.634.936.634.54 0 .828-.419.936-.634.13-.26.189-.568.189-.866 0-.298-.059-.605-.189-.866-.108-.215-.395-.634-.936-.634Zm4.314.634c.108-.215.395-.634.936-.634.54 0 .828.419.936.634.13.26.189.568.189.866 0 .298-.059.605-.189.866-.108.215-.395.634-.936.634-.54 0-.828-.419-.936-.634a1.96 1.96 0 0 1-.189-.866c0-.298.059-.605.189-.866Zm2.023 6.828a.75.75 0 1 0-1.06-1.06 3.75 3.75 0 0 1-5.304 0 .75.75 0 0 0-1.06 1.06 5.25 5.25 0 0 0 7.424 0Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="mx-2">
+                <p class="text-xl font-semibold">Understand your customers</p>
+                <p class="text-sm text-neutral-400">
+                  Then explain the first point breifly in one or two lines.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center my-6">
+              <div class="mx-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-12 bg-indigo-500 px-2 rounded-xl"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 6a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6Zm4.5 7.5a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0v-2.25a.75.75 0 0 1 .75-.75Zm3.75-1.5a.75.75 0 0 0-1.5 0v4.5a.75.75 0 0 0 1.5 0V12Zm2.25-3a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 1-1.5 0V9.75A.75.75 0 0 1 13.5 9Zm3.75-1.5a.75.75 0 0 0-1.5 0v9a.75.75 0 0 0 1.5 0v-9Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="mx-2">
+                <p class="text-xl font-semibold">Improve acquisition</p>
+                <p class="text-sm text-neutral-400">
+                  Here you can add the next benefit point.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center my-6">
+              <div class="mx-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-12 bg-indigo-500 px-2 rounded-xl"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 1.5a.75.75 0 0 1 .75.75V4.5a.75.75 0 0 1-1.5 0V2.25A.75.75 0 0 1 12 1.5ZM5.636 4.136a.75.75 0 0 1 1.06 0l1.592 1.591a.75.75 0 0 1-1.061 1.06l-1.591-1.59a.75.75 0 0 1 0-1.061Zm12.728 0a.75.75 0 0 1 0 1.06l-1.591 1.592a.75.75 0 0 1-1.06-1.061l1.59-1.591a.75.75 0 0 1 1.061 0Zm-6.816 4.496a.75.75 0 0 1 .82.311l5.228 7.917a.75.75 0 0 1-.777 1.148l-2.097-.43 1.045 3.9a.75.75 0 0 1-1.45.388l-1.044-3.899-1.601 1.42a.75.75 0 0 1-1.247-.606l.569-9.47a.75.75 0 0 1 .554-.68ZM3 10.5a.75.75 0 0 1 .75-.75H6a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 10.5Zm14.25 0a.75.75 0 0 1 .75-.75h2.25a.75.75 0 0 1 0 1.5H18a.75.75 0 0 1-.75-.75Zm-8.962 3.712a.75.75 0 0 1 0 1.061l-1.591 1.591a.75.75 0 1 1-1.061-1.06l1.591-1.592a.75.75 0 0 1 1.06 0Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div class="mx-2">
+                <p class="text-xl font-semibold">Drive customer retention</p>
+                <p class="text-sm text-neutral-400">
+                  This will be your last bullet point in this section.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="flex flex-col justify-evenly items-center">
+        <div class="max-w-xl text-center w-auto m-4 p-4">
+          <p class="text-indigo-500 font-semibold">WATCH A VIDEO</p>
+          <p class="text-2xl text-white md:text-4xl font-bold my-4">
+            Learn how to fullfil your needs
+          </p>
+          <p class="text-neutral-400 font-medium my-8">
+            This section is to highlight a promo or demo video of your product.
+            Analysts says a landing page with video has 3% more conversion rate.
+            So, don't forget to add one. Just like this.
+          </p>
+        </div>
+        <div class="flex">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/HnDRUAdgqlI?si=r6Tw1H2hdR5nWjIk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="grow max-w-3xl w-auto h-60"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="text-center">
+        <p class="text-indigo-400 font-semibold mt-8">TESTIMONIALS</p>
+        <p class="text-2xl text-white md:text-4xl font-bold my-4">
+          Here's what our customers said
+        </p>
+        <p class="text-neutral-400 font-medium my-8">
+          Testimonials is a great way to increase the brand trust and awareness.
+          Use this section to highlight your popular customers.
+        </p>
+      </div>
+      <div>
+        <div
+          class="flex flex-col md:flex-row flex-wrap justify-evenly items-center mx-20 lg:mx-auto my-16 gap-6"
+        >
+          <div
+            class="bg-neutral-700 max-w-96 max-h-2xl w-xl h-xl rounded-3xl p-8"
+          >
+            <p class="text-white text-lg font-semibold">
+              Share a real testimonial that hits some of your benefits from one
+              of your popular customer.
+            </p>
+            <div class="flex justify-evenly mt-8">
+              <div>
+                <img
+                  src="https://img.icons8.com/?size=100&id=108294&format=png&color=000000"
+                  alt=""
+                  width="52"
+                  height="52"
+                  class="rounded-full bg-gray-600"
+                />
+              </div>
+              <div class="mx-1">
+                <p class="text-white text-xl font-medium">Sarah Steiner</p>
+                <p>VP Sales at Google</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-700 max-w-96 max-h-2xl w-xl h-xl rounded-3xl p-8"
+          >
+            <p class="text-white text-lg font-semibold">
+              Make sure you only pick the right sentence to keep it short and
+              simple.
+            </p>
+            <div class="flex justify-evenly mt-8">
+              <div>
+                <img
+                  src="https://img.icons8.com/?size=100&id=108294&format=png&color=000000"
+                  alt=""
+                  width="52"
+                  height="52"
+                  class="rounded-full bg-gray-600"
+                />
+              </div>
+              <div class="mx-1">
+                <p class="text-white text-xl font-medium">Dylan Ambrose</p>
+                <p>Lead marketer at Netflix</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-neutral-700 max-w-96 max-h-2xl w-xl h-xl rounded-3xl p-8"
+          >
+            <p class="text-white text-lg font-semibold">
+              This is an awesome landing page template I've seen. I would use
+              this for anything.
+            </p>
+            <div class="flex justify-evenly mt-8">
+              <div>
+                <img
+                  src="https://img.icons8.com/?size=100&id=108294&format=png&color=000000"
+                  alt=""
+                  width="52"
+                  height="52"
+                  class="rounded-full bg-gray-600"
+                />
+              </div>
+              <div class="mx-1">
+                <p class="text-white text-xl font-medium">Gabrielle Winn</p>
+                <p>Co-founder of Acme Inc</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="mx-8 my-8">
+        <div
+          class="flex flex-col justify-evenly items-center max-h-xl h-auto mx-8 my-8 px-4 py-8 text-center"
+        >
+          <p class="text-blue-600 font-medium py-1">FAQs</p>
+          <p class="text-3xl font-bold py-2">Frequently Asked Questions</p>
+          <p>
+            Answer your customers possible questions here, it will increase the
+            conversion rate as well as support or chat requests.
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-8 max-w-xl md-16 sm:mx-auto w-full hover:cursor-pointer"
+        >
+          <details>
+            <summary
+              class="bg-neutral-700 h-12 font-medium rounded-xl list-none p-3"
+            >
+              Is this template completly free to use?
+            </summary>
+            <p>Yes, this template is completely free to use.</p>
+          </details>
+          <details>
+            <summary
+              class="bg-neutral-700 h-12 font-medium rounded-xl list-none p-3"
+            >
+              Can I use it in a commercial project?
+            </summary>
+            <p>Yes, this you can.</p>
+          </details>
+          <details>
+            <summary
+              class="bg-neutral-700 h-12 font-medium rounded-xl list-none p-3"
+            >
+              What is your refund policy?
+            </summary>
+            <p>
+              If you're unhappy with your purchase for any reason, email us
+              within 90 days and we'll refund you in full, no questions asked.
+            </p>
+          </details>
+          <details>
+            <summary
+              class="bg-neutral-700 h-12 font-medium rounded-xl list-none p-3"
+            >
+              Do you offer technical support?
+            </summary>
+            <p>
+              No, we don't offer technical support for free downloads. Please
+              purchase a support plan to get 6 months of support.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        class="flex flex-col flex-wrap shrink-1 items-center justify-evenly md:flex-row max-w-xl md:max-w-2xl lg:max-w-3xl bg-indigo-600 text-center font-medium rounded-xl md:mx-auto m-16 p-7 lg:p-12"
+      >
+        <div class="flex flex-col justify-center items-start shrink grow m-4">
+          <p class="text-2xl lg:text-3xl my-2">
+            Ready To try out this template?
+          </p>
+          <p>Don't let your visitor see a poor landing</p>
+        </div>
+        <div class="flex justify-center items-center border-">
+          <button
+            type="button"
+            class="shrink bg-white text-indigo-600 px-8 py-4 rounded-xl"
+          >
+            Download for Free
+          </button>
+        </div>
+      </div>
+    </section>
+    <hr class="max-w-sm md:max-w-lg lg:max-w-3xl w-full mx-auto" />
+    <section>
+      <div
+        class="flex flex-col md:flex-row gap-6 justify-evenly items-start p-8 m-8"
+      >
+        <div>
+          <div class="flex items-center gap-4 py-2">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 36 36"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--twemoji"
+              preserveAspectRatio="xMidYMid meet"
+              fill="#000000"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="#4f46e5"
+                  d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"
+                ></path>
+                <path
+                  fill="#FFF"
+                  d="M8.591 9.156c0-1.55.992-2.418 2.326-2.418c.589 0 1.55.465 1.954 1.023L22.7 20.877h.062V9.156c0-1.55.992-2.418 2.324-2.418c1.334 0 2.326.868 2.326 2.418v17.611c0 1.551-.992 2.418-2.326 2.418c-.588 0-1.518-.465-1.953-1.022l-9.829-12.961h-.062v11.565c0 1.551-.992 2.418-2.326 2.418s-2.326-.867-2.326-2.418V9.156z"
+                ></path>
+              </g>
+            </svg>
+            <p class="text-xl font-medium">Nextly</p>
+          </div>
+          <div class="max-w-sm text-neutral-300 py-2">
+            Nextly is a free landing page & marketing website template for
+            startups and indie projects. Its built with Next.js & TailwindCSS.
+            And its completely open-source.
+          </div>
+          <div class="py-2">
+            <div class="flex flex-wrap gap-1">
+              <div class="bg-black p-2">
+                <svg
+                  fill="#ffffff"
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke="#ffffff"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path d="M21,21H3L12,3Z"></path>
+                  </g>
+                </svg>
+              </div>
+              <button
+                type="button"
+                class="bg-black text-white px-4 py-2 rounded-lg"
+              >
+                Powered By Vercel
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul class="text-neutral-400">
+            <li class="py-1">
+              <a href="#">Products</a>
+            </li>
+            <li class="py-1">
+              <a href="#">Features</a>
+            </li>
+            <li class="py-1">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="py-1">
+              <a href="#">Company</a>
+            </li>
+            <li class="py-1">
+              <a href="#">blog</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="text-neutral-400">
+            <li class="py-1">
+              <a href="#">Terms</a>
+            </li>
+            <li class="py-1">
+              <a href="#">Privacy</a>
+            </li>
+            <li class="py-1">
+              <a href="#">Legal</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="py-1">Follow Us</div>
+          <div class="flex flex-row gap-3 my-2">
+            <div>
+              <svg
+                fill="#94a3b8"
+                width="30px"
+                height="30px"
+                viewBox="-1.6 -1.6 35.20 35.20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                transform="rotate(0)"
+                stroke="#94a3b8"
+                stroke-width="0.00032"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M21.387 4.959c1.652 0 3.144 0.676 4.195 1.762 1.308-0.253 2.54-0.714 3.648-1.352-0.428 1.301-1.34 2.393-2.525 3.083 1.16-0.136 2.27-0.434 3.301-0.88-0.773 1.117-1.745 2.1-2.868 2.886 0.011 0.239 0.017 0.479 0.017 0.719 0 7.366-5.782 15.863-16.354 15.863-3.245 0-6.268-0.926-8.809-2.507 0.449 0.052 0.906 0.079 1.37 0.079 2.692 0 5.172-0.89 7.139-2.387-2.517-0.043-4.641-1.657-5.369-3.87 0.351 0.066 0.711 0.101 1.082 0.101 0.522 0 1.032-0.067 1.512-0.195-2.629-0.511-4.611-2.764-4.611-5.467v-0.072c0.776 0.418 1.661 0.669 2.605 0.698-1.543-1.001-2.558-2.705-2.558-4.64 0-1.022 0.284-1.981 0.779-2.801 2.834 3.371 7.069 5.591 11.847 5.824-0.098-0.407-0.149-0.837-0.149-1.27 0-3.079 2.574-5.575 5.749-5.575zM30.006 7.572v0zM21.387 2.959c-3.927 0-7.18 2.869-7.681 6.576-3.213-0.646-6.135-2.346-8.235-4.842-0.381-0.454-0.942-0.713-1.531-0.713-0.052 0-0.104 0.002-0.157 0.006-0.643 0.052-1.223 0.41-1.556 0.962-0.698 1.157-1.066 2.482-1.066 3.833 0 0.902 0.162 1.779 0.469 2.601-0.327 0.364-0.515 0.839-0.515 1.341v0.072c0 1.959 0.774 3.777 2.061 5.139-0.074 0.343-0.058 0.702 0.055 1.046 0.444 1.349 1.251 2.512 2.298 3.398-0.703 0.157-1.428 0.235-2.169 0.235-0.392 0-0.773-0.021-1.133-0.066-0.080-0.010-0.159-0.014-0.238-0.014-0.84 0-1.603 0.529-1.885 1.337-0.31 0.885 0.034 1.866 0.83 2.361 2.954 1.838 6.366 2.808 9.866 2.808 11.376 0 18.219-8.905 18.352-17.605 0.931-0.771 1.754-1.662 2.451-2.661 0.254-0.334 0.405-0.751 0.405-1.203 0-0.681-0.34-1.282-0.859-1.644 0.224-0.769-0.032-1.603-0.657-2.111-0.365-0.297-0.813-0.448-1.262-0.448-0.344 0-0.689 0.088-0.999 0.268-0.661 0.381-1.368 0.683-2.113 0.9-1.347-1.014-3.017-1.578-4.732-1.578z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <svg
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#94a3b8"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>social_facebook</title>
+                  <rect width="24" height="24" fill="none"></rect>
+                  <path
+                    d="M5,3H19a2,2,0,0,1,2,2V19a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V5A2,2,0,0,1,5,3M18,5H15.5A3.5,3.5,0,0,0,12,8.5V11H10v3h2v7h3V14h3V11H15V9a1,1,0,0,1,1-1h2Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <svg
+                fill="#94a3b8"
+                height="24px"
+                width="24px"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 45.959 45.959"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <g>
+                      <path
+                        d="M5.392,0.492C2.268,0.492,0,2.647,0,5.614c0,2.966,2.223,5.119,5.284,5.119c1.588,0,2.956-0.515,3.957-1.489 c0.96-0.935,1.489-2.224,1.488-3.653C10.659,2.589,8.464,0.492,5.392,0.492z M7.847,7.811C7.227,8.414,6.34,8.733,5.284,8.733 C3.351,8.733,2,7.451,2,5.614c0-1.867,1.363-3.122,3.392-3.122c1.983,0,3.293,1.235,3.338,3.123 C8.729,6.477,8.416,7.256,7.847,7.811z"
+                      ></path>
+                      <path
+                        d="M0.959,45.467h8.988V12.422H0.959V45.467z M2.959,14.422h4.988v29.044H2.959V14.422z"
+                      ></path>
+                      <path
+                        d="M33.648,12.422c-4.168,0-6.72,1.439-8.198,2.792l-0.281-2.792H15v33.044h9.959V28.099c0-0.748,0.303-2.301,0.493-2.711 c1.203-2.591,2.826-2.591,5.284-2.591c2.831,0,5.223,2.655,5.223,5.797v16.874h10v-18.67 C45.959,16.92,39.577,12.422,33.648,12.422z M43.959,43.467h-6V28.593c0-4.227-3.308-7.797-7.223-7.797 c-2.512,0-5.358,0-7.099,3.75c-0.359,0.775-0.679,2.632-0.679,3.553v15.368H17V14.422h6.36l0.408,4.044h1.639l0.293-0.473 c0.667-1.074,2.776-3.572,7.948-3.572c4.966,0,10.311,3.872,10.311,12.374V43.467z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <div>
+              <svg
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#94a3b8"
+                width="30px"
+                height="30px"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>instagram [#94a3b8]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-340.000000, -7439.000000)"
+                      fill="#94a3b8"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                          id="instagram-[#94a3b8]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p class="text-sm text-slate-400 p-8 text-center">
+        Copyright &copy; 2024. Made with &hearts; by
+        <a
+          href="https://github.com/ayushsingh1610"
+          class="text-white hover:text-sky-600"
+          >Ayush Singh</a
+        >
+      </p>
+    </section>
+  </body>
+</html>
+
+<!-- Made by Ayush Singh (github - @ayushsingh1610) -->
